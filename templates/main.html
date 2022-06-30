@@ -1,0 +1,894 @@
+{% extends "layout.html" %}
+{%block head%}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+{%endblock%}
+
+
+
+{% block section%}
+<section class="main2">
+    <div class="containar">
+        <div>
+            <div class="featur">
+                <img class="title-img" src="static/t.png">
+                <p class="title-para">
+                    Doctor Strange teams up with a mysterious teenage girl from his dreams who can travel across multiverse....
+                </p>
+                <button class="title-button" onclick="window.location.href='https://www.youtube.com/watch?v=aWzlQ2N6qqg;'"> Watch now</button>
+
+            </div>
+        </div>
+
+    </div>
+    <div>
+        <div class="title">
+            
+            <p><span>|</span>  Trending now</p>
+        </div>
+    </div>
+    <div>
+        <div class="movie_row">
+            
+                  
+        <div id="hover">
+            <div class="movie_img">
+                <img class="border" src="static/Batman.jpg">
+        
+            </div>
+        </div>
+        <div id="hover">
+            <div class="movie_img">
+                <img class="border" src="static/q.jpg">
+        
+            </div>
+        </div>
+        <div id="hover">
+            <div class="movie_img">
+                <img class="border" src="static/d.jpg">
+        
+            </div>
+        </div>
+        <div id="hover">
+            <div class="movie_img">
+                <img class="border" src="static/crime.jpg">
+        
+            </div>
+        </div>
+        <div id="hover">
+            <div class="movie_img">
+                <img class="border" src="static/sonik.jpeg">
+        
+            </div>
+        </div>
+        <div id="hover">
+            <div class="movie_img">
+                <img class="border" src="static/fire.jpeg">
+        
+            </div>
+        </div>
+        <div id="hover">
+            <div class="movie_img">
+                <img class="border" src="static/GUY.jpg">
+        
+            </div>
+        </div>
+        <div id="hover">
+            <div class="movie_img">
+                <img class="border" src="static/shoot.jpg">
+        
+            </div>
+        </div>
+                
+
+        
+    </div>
+
+                     
+
+    <div>
+        <div class="title">
+            
+            <p><span>|</span>  movie</p>
+        </div>
+    </div>
+        
+    <div>
+        <div class="movie_row">
+            
+            
+            <div class="movie_box">
+                <div class="movie_img">
+                    <img src="static/images.jpg">
+
+                </div>
+                <div class="movie_info">
+                    <div class="info1">
+                        
+                        <h3>Everything Everywhere All at Once(2022)</h3>
+                        <p>&#9733 <span class="white">8.3</span></p>
+                        
+                        
+                        
+                    </div>
+                    <div class="info2">
+                        
+                    
+                        <div class="add">
+                            
+
+                            {%if ("Everything Everywhere All at Once(2022)",) in n%}
+                                <button type="submit" class="input1"><i class="fa-solid fa-circle-check"></i> added</button>
+
+
+                            {%else%}
+
+                                <form action="/main" method="post">
+                                    <input type="hidden" name="imag" value="images.jpg">
+                                    <input type="hidden" name="rating" value="8.3">
+                                    <input type="hidden" name="name" value="Everything Everywhere All at Once(2022)">
+                                    <input type="submit" class="input" value="+ Watchlist"> 
+
+                                </form>
+                            {%endif%}
+                        </div>
+
+                    </div>
+                    
+                    
+
+                </div>
+            </div>
+            <div class="movie_box">
+                <div class="movie_img">
+                    <img src="static/Batman.jpg">
+
+                </div>
+                <div class="movie_info">
+                    <div class="info1">
+                        <h3>The Batman(2022)</h3>
+                        <p>&#9733 <span class="white">7.9</span></p>
+                        
+                        
+                        
+                    </div>
+                    <div class="info2">
+                        
+                    
+                        <div class="add">
+                            {%if ("The Batman(2022)",) in n%}
+                                <button type="submit" class="input1"><i class="fa-solid fa-circle-check"></i> added</button>
+
+
+                            {%else%}
+                            
+
+                                <form action="/main" method="post">
+                                    <input type="hidden" name="imag" value="Batman.jpg">
+                                    <input type="hidden" name="rating" value="7.9">
+                                    <input type="hidden" name="name" value="The Batman(2022)">
+                                    <input type="submit" class="input" value="+ Watchlist"> 
+
+                                </form>
+                            {%endif%}    
+                            
+                                
+                            
+
+                            
+        
+                        </div>
+
+                    </div>
+                    
+                    
+
+                </div>
+            </div>
+            <div class="movie_box">
+                <div class="movie_img">
+                    <img src="static/d.png">
+
+                </div>
+                <div class="movie_info">
+                    <div class="info1">
+                        <h3>Top Gun: Maverick(2022)</h3>
+                        <p>&#9733 <span class="white">8.6</span></p>
+                        
+                        
+                        
+                    </div>
+                    <div class="info2">
+                        
+                    
+                        <div class="add">
+                            {%if ("Top Gun: Maverick(2022)",) in n%}
+                                <button type="submit" class="input1"><i class="fa-solid fa-circle-check"></i> added</button>
+
+
+                            {%else%}
+                            
+                            
+
+                            <form action="/main" method="post">
+                                <input type="hidden" name="imag" value="d.png">
+                                <input type="hidden" name="rating" value="8.6">
+                                <input type="hidden" name="name" value="Top Gun: Maverick(2022)">
+                                <input type="submit" class="input" value="+ Watchlist"> 
+
+                            </form>
+                            {%endif%}
+                                
+                            
+
+                            
+        
+                        </div>
+
+                    </div>
+                    
+                    
+
+                </div>
+            </div>
+            <div class="movie_box">
+                <div class="movie_img">
+                    <img src="static/inter.jpg">
+
+                </div>
+                <div class="movie_info">
+                    <div class="info1">
+                        <h3>Interstellar(2014)</h3>
+                        <p>&#9733 <span class="white">8.6</span></p>
+                        
+                        
+                        
+                    </div>
+                    <div class="info2">
+                        
+                    
+                        <div class="add">
+                            {%if ("Interstellar(2014)",) in n%}
+                                <button type="submit" class="input1"><i class="fa-solid fa-circle-check"></i> added</button>
+
+
+                            {%else%}
+                        
+                            
+                            
+
+                            <form action="/main" method="post">
+                                <input type="hidden" name="imag" value="inter.jpg">
+                                <input type="hidden" name="rating" value="8.6">
+                                <input type="hidden" name="name" value="Interstellar(2014)">
+                                <input type="submit" class="input" value="+ Watchlist"> 
+
+                            </form>
+                            {%endif%}
+                            
+                                
+                            
+
+                            
+        
+                        </div>
+
+                    </div>
+                    
+                    
+
+                </div>
+            </div>
+            <div class="movie_box">
+                <div class="movie_img">
+                    <img src="static/thor.jpg">
+
+                </div>
+                <div class="movie_info">
+                    <div class="info1">
+                        <h3>Thor: Love and Thunder(2022)</h3>
+                        <p>&#9733 <span class="white">8.1</span></p>
+                        
+                        
+                        
+                    </div>
+                    <div class="info2">
+                        
+                    
+                        <div class="add">
+                            {%if ("Thor: Love and Thunder(2022)",) in n%}
+                                <button type="submit" class="input1"><i class="fa-solid fa-circle-check"></i> added</button>
+
+
+                            {%else%}
+                            
+
+                            <form action="/main" method="post">
+                                <input type="hidden" name="imag" value="thor.jpg">
+                                <input type="hidden" name="rating" value="8.1">
+                                <input type="hidden" name="name" value="Thor: Love and Thunder(2022)">
+                                <input type="submit" class="input" value="+ Watchlist"> 
+
+                            </form>
+                            {%endif%}
+                            
+                                
+                            
+
+                            
+        
+                        </div>
+
+                    </div>
+                    
+                    
+
+                </div>
+            </div>
+            <div class="movie_box">
+                <div class="movie_img">
+                    <img src="static/wolf.jpg">
+
+                </div>
+                <div class="movie_info">
+                    <div class="info1">
+                        <h3>The wolf of wall street(2013)</h3>
+                        <p>&#9733 <span class="white">8.2</span></p>
+                        
+                        
+                        
+                    </div>
+                    <div class="info2">
+                        
+                    
+                        <div class="add">
+                            {%if ("The wolf of wall street(2013)",) in n%}
+                                <button type="submit" class="input1"><i class="fa-solid fa-circle-check"></i> added</button>
+
+
+                            {%else%}
+                            
+
+                            <form action="/main" method="post">
+                                <input type="hidden" name="imag" value="wolf.jpg">
+                                <input type="hidden" name="rating" value="8.2">
+                                <input type="hidden" name="name" value="The wolf of wall street(2013)">
+                                <input type="submit" class="input" value="+ Watchlist"> 
+
+                            </form>
+                            {%endif%}
+                            
+                                
+                            
+
+                            
+        
+                        </div>
+
+                    </div>
+                    
+                    
+
+                </div>
+            </div>
+            <div class="movie_box">
+                <div class="movie_img">
+                    <img src="static/no time.jpg">
+
+                </div>
+                <div class="movie_info">
+                    <div class="info1">
+                        <h3>No Time to Die(2021)</h3>
+                        <p>&#9733 <span class="white">7.3</span></p>
+                        
+                        
+                        
+                    </div>
+                    <div class="info2">
+                        
+                    
+                        <div class="add">
+                            {%if ("No Time to Die(2021)",) in n%}
+                                <button type="submit" class="input1"><i class="fa-solid fa-circle-check"></i> added</button>
+
+
+                            {%else%}
+                            
+
+                            <form action="/main" method="post">
+                                <input type="hidden" name="imag" value="no time.jpg">
+                                <input type="hidden" name="rating" value="7.3">
+                                <input type="hidden" name="name" value="No Time to Die(2021)">
+                                <input type="submit" class="input" value="+ Watchlist"> 
+
+                            </form>
+                            {%endif%}
+                            
+                                
+                            
+
+                            
+        
+                        </div>
+
+                    </div>
+                    
+                    
+
+                </div>
+            </div>
+            <div class="movie_box">
+                <div class="movie_img">
+                    <img src="static/king.jpg">
+
+                </div>
+                <div class="movie_info">
+                    <div class="info1">
+                        <h3>Pirates of the Caribbean: The Curse of the Black Pearl(2003)</h3>
+                        <p>&#9733 <span class="white">8.1</span></p>
+                        
+                        
+                        
+                    </div>
+                    <div class="info2">
+                        
+                    
+                        <div class="add">
+                            {%if ("Pirates of the Caribbean: The Curse of the Black Pearl(2003)",) in n%}
+                                <button type="submit" class="input1"><i class="fa-solid fa-circle-check"></i> added</button>
+
+
+                            {%else%}
+                        
+
+                            <form action="/main" method="post">
+                                <input type="hidden" name="imag" value="king.jpg">
+                                <input type="hidden" name="rating" value="8.1">
+                                <input type="hidden" name="name" value="Pirates of the Caribbean: The Curse of the Black Pearl(2003)">
+                                <input type="submit" class="input" value="+ Watchlist"> 
+
+                            </form>
+                            {%endif%}
+                            
+                            
+
+                            
+        
+                        </div>
+
+                    </div>
+                    
+                    
+
+                </div>
+            </div>
+            
+    
+    
+    
+
+                
+            
+           
+          
+            
+
+            
+            
+           
+
+
+        </div>
+
+    </div>
+    <div>
+        <div class="title" id="series">
+            
+            <p><span>|</span>  series</p>
+        </div>
+    </div>
+        
+    <div>
+        <div class="movie_row">
+            
+            
+            <div class="movie_box">
+                <div class="movie_img">
+                    <img src="static/west.jpg">
+
+                </div>
+                <div class="movie_info">
+                    <div class="info1">
+                        
+                        <h3>Westworld(2016)</h3>
+                        <p>&#9733 <span class="white">8.6</span></p>
+                        
+                        
+                        
+                    </div>
+                    <div class="info2">
+                        
+                    
+                        <div class="add">
+                            {%if ("Westworld(2016)",) in n%}
+                                <button type="submit" class="input1"><i class="fa-solid fa-circle-check"></i> added</button>
+
+
+                            {%else%}
+                            
+
+                               
+                            <form action="/main" method="post">
+                                <input type="hidden" name="imag" value="west.jpg">
+                                <input type="hidden" name="rating" value="8.6">
+                                <input type="hidden" name="name" value="Westworld(2016)">
+                                <input type="submit" class="input" value="+ Watchlist"> 
+
+                            </form>
+                            {%endif%}
+                            
+                                
+                            
+
+                            
+        
+                        </div>
+
+                    </div>
+                    
+                    
+
+                </div>
+            </div>
+            <div class="movie_box">
+                <div class="movie_img">
+                    <img src="static/peaky.jpg">
+
+                </div>
+                <div class="movie_info">
+                    <div class="info1">
+                        <h3>Peaky Blinders(2013)</h3>
+                        <p>&#9733 <span class="white">8.8</span></p>
+                        
+                        
+                        
+                    </div>
+                    <div class="info2">
+                        
+                    
+                        <div class="add">
+                            {%if ("Peaky Blinders(2013)",) in n%}
+                                <button type="submit" class="input1"><i class="fa-solid fa-circle-check"></i> added</button>
+
+
+                            {%else%}
+                            
+
+                                    
+                            <form action="/main" method="post">
+                                <input type="hidden" name="imag" value="peaky.jpg">
+                                <input type="hidden" name="rating" value="8.8">
+                                <input type="hidden" name="name" value="Peaky Blinders(2013)">
+                                <input type="submit" class="input" value="+ Watchlist"> 
+
+                            </form>
+                            {%endif%}
+                                
+                            
+
+                            
+        
+                        </div>
+
+                    </div>
+                    
+                    
+
+                </div>
+            </div>
+            <div class="movie_box">
+                <div class="movie_img">
+                    <img src="static/TheBoys.png">
+
+                </div>
+                <div class="movie_info">
+                    <div class="info1">
+                        <h3>The Boys(2019)</h3>
+                        <p>&#9733 <span class="white">8.7</span></p>
+                        
+                        
+                        
+                    </div>
+                    <div class="info2"> 
+                        
+                    
+                        <div class="add">
+                            {%if ("The Boys(2019)",) in n%}
+                                <button type="submit" class="input1"><i class="fa-solid fa-circle-check"></i> added</button>
+
+
+                            {%else%}
+                            
+
+                            <form action="/main" method="post">
+                                <input type="hidden" name="imag" value="TheBoys.png">
+                                <input type="hidden" name="rating" value="8.7">
+                                <input type="hidden" name="name" value="The Boys(2019)">
+                                <input type="submit" class="input" value="+ Watchlist"> 
+
+                            </form>
+                            {%endif%}
+                            
+                            
+                                
+                            
+
+                            
+        
+                        </div>
+
+                    </div>
+                    
+                    
+
+                </div>
+            </div>
+            <div class="movie_box">
+                <div class="movie_img">
+                    <img src="static/seve.jpg">
+
+                </div>
+                <div class="movie_info">
+                    <div class="info1">
+                        <h3>Severance(2022)</h3>
+                        <p>&#9733 <span class="white">8.7</span></p>
+                        
+                        
+                        
+                    </div>
+                    <div class="info2">
+                        
+                    
+                        <div class="add">
+                            {%if ("Severance",) in n%}
+                                <button type="submit" class="input1"><i class="fa-solid fa-circle-check"></i> added</button>
+
+
+                            {%else%}
+                            
+
+                                <form action="/main" method="post">
+                                    <input type="hidden" name="imag" value="seve.jpg">
+                                    <input type="hidden" name="rating" value="8.7">
+                                    <input type="hidden" name="name" value="Severance">
+                                    <input type="submit" class="input" value="+ Watchlist"> 
+
+                                </form>
+                            {%endif%}    
+                                                            
+                            
+
+                            
+        
+                        </div>
+
+                    </div>
+                    
+                    
+
+                </div>
+            </div>
+            <div class="movie_box">
+                <div class="movie_img">
+                    <img src="static/ber.jpg">
+
+                </div>
+                <div class="movie_info">
+                    <div class="info1">
+                        <h3>Breaking Bad(2008)</h3>
+                        <p>&#9733 <span class="white">9.5</span></p>
+                        
+                        
+                        
+                    </div>
+                    <div class="info2">
+                        
+                    
+                        <div class="add">
+                            {%if ("Breaking Bad(2008)",) in n%}
+                                <button type="submit" class="input1"><i class="fa-solid fa-circle-check"></i> added</button>
+
+
+                            {%else%}
+                            
+
+                            <form action="/main" method="post">
+                                <input type="hidden" name="imag" value="ber.jpg">
+                                <input type="hidden" name="rating" value="9.5">
+                                <input type="hidden" name="name" value="Breaking Bad(2008)">
+                                <input type="submit" class="input" value="+ Watchlist"> 
+
+                            </form>
+                            {%endif%}
+                            
+                            
+                                
+                            
+
+                            
+        
+                        </div>
+
+                    </div>
+                    
+                    
+
+                </div>
+            </div>
+            <div class="movie_box">
+                <div class="movie_img">
+                    <img src="static/game.jpg">
+
+                </div>
+                <div class="movie_info">
+                    <div class="info1">
+                        <h3>game of thrones(2011)</h3>
+                        <p>&#9733 <span class="white">9.2</span></p>
+                        
+                        
+                        
+                    </div>
+                    <div class="info2">
+                        
+                    
+                        <div class="add">
+                            {%if ("game of thrones(2011)",) in n%}
+                                <button type="submit" class="input1"><i class="fa-solid fa-circle-check"></i> added</button>
+
+
+                            {%else%}
+                            
+
+                            <form action="/main" method="post">
+                                <input type="hidden" name="imag" value="game.jpg">
+                                <input type="hidden" name="rating" value="9.2">
+                                <input type="hidden" name="name" value="game of thrones(2011)">
+                                <input type="submit" class="input" value="+ Watchlist"> 
+
+                            </form>
+                            {%endif%}
+                            
+                            
+                                
+                            
+
+                            
+        
+                        </div>
+
+                    </div>
+                    
+                    
+
+                </div>
+            </div>
+            <div class="movie_box">
+                <div class="movie_img">
+                    <img src="static/viking.jpg">
+
+                </div>
+                <div class="movie_info">
+                    <div class="info1">
+                        <h3>Vikings(2013)</h3>
+                        <p>&#9733 <span class="white">8.5</span></p>
+                        
+                        
+                        
+                    </div>
+                    <div class="info2">
+                        
+                    
+                        <div class="add">
+                            {%if ("Vikings(2013)",) in n%}
+                                <button type="submit" class="input1"><i class="fa-solid fa-circle-check"></i> added</button>
+
+
+                            {%else%}
+                            
+
+                            <form action="/main" method="post">
+                                <input type="hidden" name="imag" value="viking.jpg">
+                                <input type="hidden" name="rating" value="8.5">
+                                <input type="hidden" name="name" value="Vikings(2013)">
+                                <input type="submit" class="input" value="+ Watchlist"> 
+
+                            </form>
+                            {%endif%}
+                                
+                            
+
+                            
+        
+                        </div>
+
+                    </div>
+                    
+                    
+
+                </div>
+            </div>
+            <div class="movie_box">
+                <div class="movie_img">
+                    <img src="static/witch.jpg">
+
+                </div>
+                <div class="movie_info">
+                    <div class="info1">
+                        <h3>The Witcher(2019)</h3>
+                        <p>&#9733 <span class="white">8.2</span></p>
+                        
+                        
+                        
+                    </div>
+                    <div class="info2">
+                        
+                    
+                        <div class="add">
+                            {%if ("The Witcher(2019)",) in n%}
+                                <button type="submit" class="input1"><i class="fa-solid fa-circle-check"></i> added</button>
+
+
+                            {%else%}
+                            
+
+                                
+                            <form action="/main" method="post">
+                                <input type="hidden" name="imag" value="witch.jpg">
+                                <input type="hidden" name="rating" value="8.2">
+                                <input type="hidden" name="name" value="The Witcher(2019)">
+                                <input type="submit" class="input" value="+ Watchlist"> 
+
+                            </form>
+                            {%endif%}
+
+                            
+        
+                        </div>
+
+                    </div>
+                    
+                    
+
+                </div>
+            </div>
+            
+    
+    
+    
+
+                
+            
+           
+          
+            
+
+            
+            
+           
+
+
+        </div>    
+    </div>    
+            
+            
+
+
+    
+    
+
+</section>
+
+   
+       
+{% endblock %}

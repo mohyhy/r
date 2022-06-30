@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+
+
+{% block section %}
+<section class="main">
+
+
+    <div>
+        
+        <h1><span class="first">Log in</span> <span class="therd">and</span> <span class="secend">Create</span><br> your own list  of your favorite<br> movies and series </h1>
+
+           
+    
+    </div>
+    <div>
+        <form action="/" method="post">
+            <h2 >log in</h2>
+            <div class="g">
+                <input autocomplete="off" autofocus id="username" name="name" placeholder="Username" type="text">
+            </div>
+            <div class="g">
+                <input id="password" name="password" placeholder="Password" type="password">
+            </div>
+            <button class="main_btn" type="submit">Log In</button>
+        </form>
+
+        </form>
+    </div>
+   
+</section>
+    
+{% endblock %}

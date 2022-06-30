@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+
+
+{% block section%}
+<section class="main">
+    
+
+   
+<div class="sign">
+    <form action="/register" method="POST">
+        <h2 >sign up</h2>
+        <div >
+            <input autocomplete="off" autofocus id="username" name="username" placeholder="Username" type="text">
+        </div>
+        <div >
+            <input id="password" name="password" placeholder="Password" type="password">
+            <input id="com_password" name="confirmation" placeholder="confirm   Password" type="password">
+        </div>
+        <button class="main_btn" type="submit">register</button>
+    </form>
+
+</div>
+</section>
+
+    
+{% endblock %}
